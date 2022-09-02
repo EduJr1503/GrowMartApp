@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C704C887801EE2CC9F8112A /* Pods_GrowMartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */; };
 		8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA228C2AF0500808973 /* AppDelegate.swift */; };
 		8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA428C2AF0500808973 /* SceneDelegate.swift */; };
 		8887AFA728C2AF0500808973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA628C2AF0500808973 /* ViewController.swift */; };
-		8887AFAA28C2AF0500808973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFA828C2AF0500808973 /* Main.storyboard */; };
 		8887AFAC28C2AF0700808973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFAB28C2AF0700808973 /* Assets.xcassets */; };
 		8887AFAF28C2AF0700808973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowMartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D2861F146B5B4F79AB64E5 /* Pods-GrowMartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowMartApp.release.xcconfig"; path = "Target Support Files/Pods-GrowMartApp/Pods-GrowMartApp.release.xcconfig"; sourceTree = "<group>"; };
 		8887AF9F28C2AF0500808973 /* GrowMartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowMartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8887AFA228C2AF0500808973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8887AFA428C2AF0500808973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8887AFA628C2AF0500808973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8887AFA928C2AF0500808973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8887AFAB28C2AF0700808973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8887AFAE28C2AF0700808973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8887AFB028C2AF0700808973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F022757DFBD23A0EA1EDEF /* Pods-GrowMartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowMartApp.debug.xcconfig"; path = "Target Support Files/Pods-GrowMartApp/Pods-GrowMartApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C704C887801EE2CC9F8112A /* Pods_GrowMartApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21328F14D108D0B7334F9BD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2F022757DFBD23A0EA1EDEF /* Pods-GrowMartApp.debug.xcconfig */,
+				77D2861F146B5B4F79AB64E5 /* Pods-GrowMartApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5412423EA1DA9FEB4A4A7529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8887AF9628C2AF0500808973 = {
 			isa = PBXGroup;
 			children = (
 				8887AFA128C2AF0500808973 /* GrowMartApp */,
 				8887AFA028C2AF0500808973 /* Products */,
+				21328F14D108D0B7334F9BD9 /* Pods */,
+				5412423EA1DA9FEB4A4A7529 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +81,6 @@
 				8887AFA228C2AF0500808973 /* AppDelegate.swift */,
 				8887AFA428C2AF0500808973 /* SceneDelegate.swift */,
 				8887AFA628C2AF0500808973 /* ViewController.swift */,
-				8887AFA828C2AF0500808973 /* Main.storyboard */,
 				8887AFAB28C2AF0700808973 /* Assets.xcassets */,
 				8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */,
 				8887AFB028C2AF0700808973 /* Info.plist */,
@@ -74,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8887AFB328C2AF0700808973 /* Build configuration list for PBXNativeTarget "GrowMartApp" */;
 			buildPhases = (
+				C0E076A3A47EF9F582E543DE /* [CP] Check Pods Manifest.lock */,
 				8887AF9B28C2AF0500808973 /* Sources */,
 				8887AF9C28C2AF0500808973 /* Frameworks */,
 				8887AF9D28C2AF0500808973 /* Resources */,
@@ -127,11 +149,35 @@
 			files = (
 				8887AFAF28C2AF0700808973 /* LaunchScreen.storyboard in Resources */,
 				8887AFAC28C2AF0700808973 /* Assets.xcassets in Resources */,
-				8887AFAA28C2AF0500808973 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0E076A3A47EF9F582E543DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrowMartApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8887AF9B28C2AF0500808973 /* Sources */ = {
@@ -147,14 +193,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8887AFA828C2AF0500808973 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8887AFA928C2AF0500808973 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +320,7 @@
 		};
 		8887AFB428C2AF0700808973 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2F022757DFBD23A0EA1EDEF /* Pods-GrowMartApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +331,6 @@
 				INFOPLIST_FILE = GrowMartApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +348,7 @@
 		};
 		8887AFB528C2AF0700808973 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D2861F146B5B4F79AB64E5 /* Pods-GrowMartApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +359,6 @@
 				INFOPLIST_FILE = GrowMartApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
