@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5C704C887801EE2CC9F8112A /* Pods_GrowMartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */; };
-		887E3D0628C2B9E300E5D5EA /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0528C2B9E300E5D5EA /* Teste.swift */; };
+		887E3D0928C2BE4E00E5D5EA /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0828C2BE4E00E5D5EA /* SelectorView.swift */; };
+		887E3D0B28C2BE7100E5D5EA /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0A28C2BE7100E5D5EA /* SelectorViewController.swift */; };
+		887E3D0E28C2BEB800E5D5EA /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0D28C2BEB800E5D5EA /* CategoryButton.swift */; };
+		887E3D1528C2BF7600E5D5EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D1428C2BF7600E5D5EA /* LoginViewController.swift */; };
+		887E3D1728C2BF8200E5D5EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D1628C2BF8200E5D5EA /* LoginView.swift */; };
+		887E3D1A28C2BFDE00E5D5EA /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D1928C2BFDE00E5D5EA /* UIColor+Extensions.swift */; };
+		887E3D1C28C2BFEF00E5D5EA /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D1B28C2BFEF00E5D5EA /* UIFont+Extensions.swift */; };
+		887E3D1F28C2C2FE00E5D5EA /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D1E28C2C2FE00E5D5EA /* ViewCodable.swift */; };
 		8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA228C2AF0500808973 /* AppDelegate.swift */; };
 		8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA428C2AF0500808973 /* SceneDelegate.swift */; };
-		8887AFA728C2AF0500808973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA628C2AF0500808973 /* ViewController.swift */; };
 		8887AFAC28C2AF0700808973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFAB28C2AF0700808973 /* Assets.xcassets */; };
 		8887AFAF28C2AF0700808973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,11 +25,19 @@
 /* Begin PBXFileReference section */
 		5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowMartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D2861F146B5B4F79AB64E5 /* Pods-GrowMartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowMartApp.release.xcconfig"; path = "Target Support Files/Pods-GrowMartApp/Pods-GrowMartApp.release.xcconfig"; sourceTree = "<group>"; };
-		887E3D0528C2B9E300E5D5EA /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
+		887E3D0828C2BE4E00E5D5EA /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
+		887E3D0A28C2BE7100E5D5EA /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
+		887E3D0D28C2BEB800E5D5EA /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		887E3D1128C2BF2300E5D5EA /* Nunito-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		887E3D1228C2BF2300E5D5EA /* Nunito-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		887E3D1428C2BF7600E5D5EA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		887E3D1628C2BF8200E5D5EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		887E3D1928C2BFDE00E5D5EA /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		887E3D1B28C2BFEF00E5D5EA /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		887E3D1E28C2C2FE00E5D5EA /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		8887AF9F28C2AF0500808973 /* GrowMartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowMartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8887AFA228C2AF0500808973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8887AFA428C2AF0500808973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8887AFA628C2AF0500808973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8887AFAB28C2AF0700808973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8887AFAE28C2AF0700808973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8887AFB028C2AF0700808973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +73,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		887E3D0728C2BE3D00E5D5EA /* Selector */ = {
+			isa = PBXGroup;
+			children = (
+				887E3D0828C2BE4E00E5D5EA /* SelectorView.swift */,
+				887E3D0A28C2BE7100E5D5EA /* SelectorViewController.swift */,
+			);
+			path = Selector;
+			sourceTree = "<group>";
+		};
+		887E3D0C28C2BE8B00E5D5EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				887E3D0D28C2BEB800E5D5EA /* CategoryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		887E3D0F28C2BEED00E5D5EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8887AFAB28C2AF0700808973 /* Assets.xcassets */,
+				887E3D1028C2BF1500E5D5EA /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		887E3D1028C2BF1500E5D5EA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				887E3D1128C2BF2300E5D5EA /* Nunito-Italic-VariableFont_wght.ttf */,
+				887E3D1228C2BF2300E5D5EA /* Nunito-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		887E3D1328C2BF5A00E5D5EA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				887E3D1428C2BF7600E5D5EA /* LoginViewController.swift */,
+				887E3D1628C2BF8200E5D5EA /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		887E3D1828C2BFBE00E5D5EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				887E3D1928C2BFDE00E5D5EA /* UIColor+Extensions.swift */,
+				887E3D1B28C2BFEF00E5D5EA /* UIFont+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		887E3D1D28C2C26500E5D5EA /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8887AFA228C2AF0500808973 /* AppDelegate.swift */,
+				8887AFA428C2AF0500808973 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		8887AF9628C2AF0500808973 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +156,15 @@
 		8887AFA128C2AF0500808973 /* GrowMartApp */ = {
 			isa = PBXGroup;
 			children = (
-				8887AFA228C2AF0500808973 /* AppDelegate.swift */,
-				8887AFA428C2AF0500808973 /* SceneDelegate.swift */,
-				8887AFA628C2AF0500808973 /* ViewController.swift */,
-				8887AFAB28C2AF0700808973 /* Assets.xcassets */,
-				887E3D0528C2B9E300E5D5EA /* Teste.swift */,
+				887E3D0728C2BE3D00E5D5EA /* Selector */,
+				887E3D0C28C2BE8B00E5D5EA /* Components */,
+				887E3D0F28C2BEED00E5D5EA /* Resources */,
+				887E3D1328C2BF5A00E5D5EA /* Login */,
+				887E3D1828C2BFBE00E5D5EA /* Extensions */,
+				887E3D1D28C2C26500E5D5EA /* Delegate */,
 				8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */,
 				8887AFB028C2AF0700808973 /* Info.plist */,
+				887E3D1E28C2C2FE00E5D5EA /* ViewCodable.swift */,
 			);
 			path = GrowMartApp;
 			sourceTree = "<group>";
@@ -187,10 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8887AFA728C2AF0500808973 /* ViewController.swift in Sources */,
+				887E3D1C28C2BFEF00E5D5EA /* UIFont+Extensions.swift in Sources */,
+				887E3D1A28C2BFDE00E5D5EA /* UIColor+Extensions.swift in Sources */,
+				887E3D0B28C2BE7100E5D5EA /* SelectorViewController.swift in Sources */,
 				8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */,
+				887E3D1728C2BF8200E5D5EA /* LoginView.swift in Sources */,
+				887E3D1F28C2C2FE00E5D5EA /* ViewCodable.swift in Sources */,
 				8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */,
-				887E3D0628C2B9E300E5D5EA /* Teste.swift in Sources */,
+				887E3D1528C2BF7600E5D5EA /* LoginViewController.swift in Sources */,
+				887E3D0E28C2BEB800E5D5EA /* CategoryButton.swift in Sources */,
+				887E3D0928C2BE4E00E5D5EA /* SelectorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
