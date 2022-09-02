@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C704C887801EE2CC9F8112A /* Pods_GrowMartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */; };
+		887E3D0628C2B9E300E5D5EA /* Teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0528C2B9E300E5D5EA /* Teste.swift */; };
 		8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA228C2AF0500808973 /* AppDelegate.swift */; };
 		8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA428C2AF0500808973 /* SceneDelegate.swift */; };
 		8887AFA728C2AF0500808973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA628C2AF0500808973 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowMartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D2861F146B5B4F79AB64E5 /* Pods-GrowMartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowMartApp.release.xcconfig"; path = "Target Support Files/Pods-GrowMartApp/Pods-GrowMartApp.release.xcconfig"; sourceTree = "<group>"; };
+		887E3D0528C2B9E300E5D5EA /* Teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste.swift; sourceTree = "<group>"; };
 		8887AF9F28C2AF0500808973 /* GrowMartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowMartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8887AFA228C2AF0500808973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8887AFA428C2AF0500808973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				8887AFA428C2AF0500808973 /* SceneDelegate.swift */,
 				8887AFA628C2AF0500808973 /* ViewController.swift */,
 				8887AFAB28C2AF0700808973 /* Assets.xcassets */,
+				887E3D0528C2B9E300E5D5EA /* Teste.swift */,
 				8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */,
 				8887AFB028C2AF0700808973 /* Info.plist */,
 			);
@@ -187,6 +190,7 @@
 				8887AFA728C2AF0500808973 /* ViewController.swift in Sources */,
 				8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */,
 				8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */,
+				887E3D0628C2B9E300E5D5EA /* Teste.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
