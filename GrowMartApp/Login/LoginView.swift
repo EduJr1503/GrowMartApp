@@ -74,7 +74,7 @@ class LoginView: UIView {
                                          icon: UIImage?) -> UIButton.Configuration {
         var configuration = UIButton.Configuration.filled()
         configuration.title = title
-        configuration.attributedTitle = AttributedString(title, attributes: getFontAttributes())
+//      configuration.attributedTitle = AttributedString(title, attributes: getFontAttributes())
         configuration.image = icon
         configuration.titlePadding = 10
         configuration.imagePadding = 30

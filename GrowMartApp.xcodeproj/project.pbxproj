@@ -163,8 +163,8 @@
 				887E3D1828C2BFBE00E5D5EA /* Extensions */,
 				887E3D1D28C2C26500E5D5EA /* Delegate */,
 				8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */,
-				8887AFB028C2AF0700808973 /* Info.plist */,
 				887E3D1E28C2C2FE00E5D5EA /* ViewCodable.swift */,
+				8887AFB028C2AF0700808973 /* Info.plist */,
 			);
 			path = GrowMartApp;
 			sourceTree = "<group>";
