@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C704C887801EE2CC9F8112A /* Pods_GrowMartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */; };
+		88629B0328CAA0CD00F289EC /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88629B0228CAA0CD00F289EC /* CartView.swift */; };
 		887E3D0928C2BE4E00E5D5EA /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0828C2BE4E00E5D5EA /* SelectorView.swift */; };
 		887E3D0B28C2BE7100E5D5EA /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0A28C2BE7100E5D5EA /* SelectorViewController.swift */; };
 		887E3D0E28C2BEB800E5D5EA /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0D28C2BEB800E5D5EA /* CategoryButton.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowMartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D2861F146B5B4F79AB64E5 /* Pods-GrowMartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowMartApp.release.xcconfig"; path = "Target Support Files/Pods-GrowMartApp/Pods-GrowMartApp.release.xcconfig"; sourceTree = "<group>"; };
+		88629B0228CAA0CD00F289EC /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		887E3D0828C2BE4E00E5D5EA /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
 		887E3D0A28C2BE7100E5D5EA /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
 		887E3D0D28C2BEB800E5D5EA /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 				5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88629B0128CAA0B700F289EC /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				88629B0228CAA0CD00F289EC /* CartView.swift */,
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 		887E3D0728C2BE3D00E5D5EA /* Selector */ = {
@@ -156,6 +166,7 @@
 		8887AFA128C2AF0500808973 /* GrowMartApp */ = {
 			isa = PBXGroup;
 			children = (
+				88629B0128CAA0B700F289EC /* Cart */,
 				887E3D0728C2BE3D00E5D5EA /* Selector */,
 				887E3D0C28C2BE8B00E5D5EA /* Components */,
 				887E3D0F28C2BEED00E5D5EA /* Resources */,
@@ -271,6 +282,7 @@
 				8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */,
 				887E3D1728C2BF8200E5D5EA /* LoginView.swift in Sources */,
 				887E3D1F28C2C2FE00E5D5EA /* ViewCodable.swift in Sources */,
+				88629B0328CAA0CD00F289EC /* CartView.swift in Sources */,
 				8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */,
 				887E3D1528C2BF7600E5D5EA /* LoginViewController.swift in Sources */,
 				887E3D0E28C2BEB800E5D5EA /* CategoryButton.swift in Sources */,
