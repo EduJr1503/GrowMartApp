@@ -119,6 +119,10 @@ extension LoginView: ViewCodable {
         setupConstraints()
     }
 
+    func setupAdditionalConfiguration(){
+        
+    }
+    
     func buildViewHierarchy() {
         stackView.addArrangedSubview(logoImageView)
         stackView.addArrangedSubview(bagsImageView)

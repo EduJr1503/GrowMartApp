@@ -28,6 +28,6 @@ extension UIFont {
     }
 
     static func nunito(style: NunitoStyle = .regular, size: CGFloat) -> UIFont {
-        UIFont(name: "Nunito-\(style.rawValue)", size: size)!
+        UIFont(name: "Nunito-Italic-VariableFont_wght", size: size)!
     }
 }
