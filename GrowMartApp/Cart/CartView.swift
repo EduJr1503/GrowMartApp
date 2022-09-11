@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol CartViewDelegate: AnyObject {
+    
+
+}
 public final class CartView: UIView {
+    // MARK: - Public Properties
+    weak var delegate: CartViewDelegate?
     
     // MARK: - Private Properties
     
@@ -64,15 +70,15 @@ extension CartView: ViewCodable{
             lineView.trailingAnchor.constraint(equalTo: trailingAnchor),
             lineView.heightAnchor.constraint(equalToConstant: 2),
             
-            lineView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
-            lineView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            lineView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            lineView.heightAnchor.constraint(equalToConstant: 2),
+            yellowBarView.bottomAnchor.constraint(equalTo: lineView.bottomAnchor),
+            yellowBarView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
+            yellowBarView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
+            yellowBarView.heightAnchor.constraint(equalToConstant: 5),
             
-            yellowBarView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
-            yellowBarView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            yellowBarView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            yellowBarView.heightAnchor.constraint(equalToConstant: 2),
+            tableview.topAnchor.constraint(equalTo: lineView.bottomAnchor),
+            tableview.leadingAnchor.constraint(equalTo: leadingAnchor),
+            tableview.trailingAnchor.constraint(equalTo: trailingAnchor),
+            tableview.bottomAnchor.constraint(equalTo: bottomAnchor),
             
         ])
         

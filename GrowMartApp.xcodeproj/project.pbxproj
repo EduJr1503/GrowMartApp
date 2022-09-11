@@ -21,6 +21,7 @@
 		8887AFA528C2AF0500808973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8887AFA428C2AF0500808973 /* SceneDelegate.swift */; };
 		8887AFAC28C2AF0700808973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFAB28C2AF0700808973 /* Assets.xcassets */; };
 		8887AFAF28C2AF0700808973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8887AFAD28C2AF0700808973 /* LaunchScreen.storyboard */; };
+		88DFB46428CE370D009806B0 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB46328CE370D009806B0 /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		8887AFAB28C2AF0700808973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8887AFAE28C2AF0700808973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8887AFB028C2AF0700808973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DFB46328CE370D009806B0 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		C2F022757DFBD23A0EA1EDEF /* Pods-GrowMartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowMartApp.debug.xcconfig"; path = "Target Support Files/Pods-GrowMartApp/Pods-GrowMartApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				88629B0228CAA0CD00F289EC /* CartView.swift */,
+				88DFB46328CE370D009806B0 /* CartViewController.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				887E3D1A28C2BFDE00E5D5EA /* UIColor+Extensions.swift in Sources */,
 				887E3D0B28C2BE7100E5D5EA /* SelectorViewController.swift in Sources */,
 				8887AFA328C2AF0500808973 /* AppDelegate.swift in Sources */,
+				88DFB46428CE370D009806B0 /* CartViewController.swift in Sources */,
 				887E3D1728C2BF8200E5D5EA /* LoginView.swift in Sources */,
 				887E3D1F28C2C2FE00E5D5EA /* ViewCodable.swift in Sources */,
 				88629B0328CAA0CD00F289EC /* CartView.swift in Sources */,
