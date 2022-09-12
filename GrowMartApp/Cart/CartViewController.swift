@@ -34,8 +34,20 @@ extension CartViewController: ViewCodable {
     }
     
     func setupConstraints() {
-        cartView?.translatesAutoresizingMaskIntoConstraints = false
+        guard let cartView = cartView else {
+            return
+        }
+            
+        cartView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            cartView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            cartView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            cartView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            cartView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
     }
+    
     
     func setupAdditionalConfiguration() {
         cartView?.delegate = self
@@ -44,7 +56,7 @@ extension CartViewController: ViewCodable {
 }
 
 extension CartViewController: CartViewDelegate {
-    
+
 }
 
 // parei em 27min45s
