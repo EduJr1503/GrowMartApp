@@ -8,7 +8,6 @@
 import UIKit
 
 protocol CartViewDelegate: AnyObject {
-    
 
 }
 public final class CartView: UIView {
@@ -65,20 +64,20 @@ extension CartView: ViewCodable{
     
     public func setupConstraints() {
         NSLayoutConstraint.activate([
-            lineView.topAnchor.constraint(equalTo: topAnchor, constant: 24),
-            lineView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            lineView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            lineView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24),
+            lineView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            lineView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
             lineView.heightAnchor.constraint(equalToConstant: 2),
             
             yellowBarView.bottomAnchor.constraint(equalTo: lineView.bottomAnchor),
-            yellowBarView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            yellowBarView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
+            yellowBarView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 32),
+            yellowBarView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -32),
             yellowBarView.heightAnchor.constraint(equalToConstant: 5),
             
             tableview.topAnchor.constraint(equalTo: lineView.bottomAnchor),
-            tableview.leadingAnchor.constraint(equalTo: leadingAnchor),
-            tableview.trailingAnchor.constraint(equalTo: trailingAnchor),
-            tableview.bottomAnchor.constraint(equalTo: bottomAnchor),
+            tableview.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            tableview.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
+            tableview.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
             
         ])
         

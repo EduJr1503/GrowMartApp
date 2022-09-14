@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C704C887801EE2CC9F8112A /* Pods_GrowMartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8C58F7365FE2142FD311E9 /* Pods_GrowMartApp.framework */; };
+		8830330F28D2906800CDFDED /* Nunito-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 887E3D1228C2BF2300E5D5EA /* Nunito-VariableFont_wght.ttf */; };
+		8830331028D2906B00CDFDED /* Nunito-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 887E3D1128C2BF2300E5D5EA /* Nunito-Italic-VariableFont_wght.ttf */; };
 		88629B0328CAA0CD00F289EC /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88629B0228CAA0CD00F289EC /* CartView.swift */; };
 		887E3D0928C2BE4E00E5D5EA /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0828C2BE4E00E5D5EA /* SelectorView.swift */; };
 		887E3D0B28C2BE7100E5D5EA /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887E3D0A28C2BE7100E5D5EA /* SelectorViewController.swift */; };
@@ -243,6 +245,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8887AFAF28C2AF0700808973 /* LaunchScreen.storyboard in Resources */,
+				8830330F28D2906800CDFDED /* Nunito-VariableFont_wght.ttf in Resources */,
+				8830331028D2906B00CDFDED /* Nunito-Italic-VariableFont_wght.ttf in Resources */,
 				8887AFAC28C2AF0700808973 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

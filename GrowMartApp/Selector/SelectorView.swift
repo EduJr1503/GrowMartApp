@@ -7,6 +7,10 @@
 
 import UIKit
 
+public protocol SelectorViewDelegate: AnyObject {
+    func didSelectCategory(id: Int)
+}
+
 class SelectorView: UIView {
     
     // MARK: - Private Properties
@@ -40,6 +44,8 @@ class SelectorView: UIView {
                                                        image: UIImage(named: "outros"))
 
         // MARK: - Private Methods
+    
+    weak var delegate: SelectorViewDelegate?
     
         // MARK: - Inits
         override init(frame: CGRect) {
