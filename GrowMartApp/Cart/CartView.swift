@@ -85,7 +85,5 @@ extension CartView: ViewCodable{
     
     public func setupAdditionalConfiguration() {
 
-    }
-    
-    
+    }    
 }
