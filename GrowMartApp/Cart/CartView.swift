@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CartViewDelegate: AnyObject {
-
+    func numberOfRows() -> Int
 }
 public final class CartView: UIView {
     // MARK: - Public Properties
@@ -34,8 +34,8 @@ public final class CartView: UIView {
         let element = UITableView()
         element.translatesAutoresizingMaskIntoConstraints = false
         element.backgroundColor = .white
-        // de onde ele pega dos dados?
-        // pra quem ele delega os eventos?
+        element.dataSource = self
+        element.delegate = self
         element.separatorStyle = .none
         return element
     }()
@@ -87,3 +87,22 @@ extension CartView: ViewCodable{
 
     }    
 }
+
+// MARK: - UITableViewDataSource, UITableViewDelegate
+
+extension CartView: UITableViewDataSource, UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        delegate?.numberOfRows() ?? 0
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        UITableViewCell()
+    }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+// Parei em 45min16s
+

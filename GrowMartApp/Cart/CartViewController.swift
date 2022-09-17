@@ -26,6 +26,9 @@ class CartViewController: UIViewController {
 }
 
 extension CartViewController: CartViewDelegate {
-
+    func numberOfRows() -> Int {
+        10
+    }
 }
+
 
