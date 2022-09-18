@@ -104,5 +104,3 @@ extension CartView: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
-// Parei em 45min16s
-
