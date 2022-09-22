@@ -24,8 +24,8 @@ public final class ButtonCell: UITableViewCell {
         element.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         element.configuration = .makeWith(backgroundColor: .init(rgb: 0xFFC13B),
                                          title: "check-out",
-                                          font: .nunito(style: .semiBold, size: 18),
-                                          icon: nil)
+                                         font: .nunito(style: .semiBold, size: 18),
+                                         icon: nil)
     }()
     
     // MARK: Actions

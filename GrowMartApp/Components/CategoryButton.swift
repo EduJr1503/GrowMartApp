@@ -14,6 +14,7 @@ class CategoryButton: UIControl {
         case right
     }
 
+    let categoryId: Int
     private let title: String
     private let imageSide: ImageSide
     private let image: UIImage?
@@ -37,10 +38,11 @@ class CategoryButton: UIControl {
     }()
 
     // MARK: - Inits
-    internal init(title: String, imageSide: CategoryButton.ImageSide, image: UIImage?) {
+    internal init(title: String, imageSide: CategoryButton.ImageSide, image: UIImage?, categoryId: Int) {
         self.title = title
         self.imageSide = imageSide
         self.image = image
+        self.categoryId = categoryId
         super.init(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         setupView()
     }
