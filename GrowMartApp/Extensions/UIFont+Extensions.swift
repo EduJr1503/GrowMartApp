@@ -26,7 +26,7 @@ extension UIFont {
         case extraBoldItalic = "ExtraBoldItalic"
         case blackItalic = "BlackItalic"
     }
-
+    
     static func nunito(style: NunitoStyle = .regular, size: CGFloat) -> UIFont {
         UIFont(name: "Nunito-\(style.rawValue)", size: size)!
     }

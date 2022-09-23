@@ -48,7 +48,7 @@ public final class CartView: UIView {
         super.init(frame: frame)
         setupView()
     }
-
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
@@ -84,8 +84,12 @@ extension CartView: ViewCodable{
     }
     
     public func setupAdditionalConfiguration() {
-
-    }    
+        registerTableViewCells()
+    }
+    
+    private func registerTableViewCells() {
+        tableview.register(ButtonCell.self, forCellReuseIdentifier: String(describing: ButtonCell.self))
+    }
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
@@ -96,7 +100,12 @@ extension CartView: UITableViewDataSource, UITableViewDelegate {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        let cell = tableview.dequeueReusableCell(withIdentifier: String(describing: ButtonCell.self), for: indexPath)
+        
+        if let buttonCell = cell as? ButtonCell {
+            buttonCell.delegate = self
+        }
+        return cell
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -104,3 +113,12 @@ extension CartView: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+// MARK: - UITableViewDataSource, UITableViewDelegate
+
+extension CartView: ButtonCellDelegate {
+    public func didTapButton() {
+        print("didTapButton")
+    }
+}
+
+// parei em 1h10min35s

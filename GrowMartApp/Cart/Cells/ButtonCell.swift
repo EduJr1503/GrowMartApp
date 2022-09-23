@@ -23,9 +23,11 @@ public final class ButtonCell: UITableViewCell {
         element.layer.cornerRadius = 5
         element.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         element.configuration = .makeWith(backgroundColor: .init(rgb: 0xFFC13B),
-                                         title: "check-out",
-                                         font: .nunito(style: .semiBold, size: 18),
-                                         icon: nil)
+                                          title: "check-out",
+                                          font: .nunito(style: .semiBold, size: 18),
+                                          icon: nil)
+        
+        return element
     }()
     
     // MARK: Actions
@@ -52,13 +54,16 @@ extension ButtonCell: ViewCodable {
     }
     
     public func setupConstraints() {
-        
+        NSLayoutConstraint.activate([
+            button.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
+            button.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 32),
+            button.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -32),
+            button.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+        ])
     }
     
     public func setupAdditionalConfiguration() {
-        
+        selectionStyle = .none
     }
     
 }
-
-// parei em 1:01:32

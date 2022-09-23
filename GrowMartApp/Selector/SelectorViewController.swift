@@ -14,19 +14,19 @@ class SelectorViewController: UIViewController {
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
-
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
-
+    
     // MARK: - Private Methods
     private func setupView() {
         selectorView.delegate = self
         view.backgroundColor = .white
         view.addSubview(selectorView)
-
+        
         NSLayoutConstraint.activate([
             selectorView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             selectorView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),

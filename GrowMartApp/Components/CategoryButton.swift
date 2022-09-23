@@ -8,17 +8,17 @@
 import UIKit
 
 class CategoryButton: UIControl {
-
+    
     enum ImageSide {
         case left
         case right
     }
-
+    
     let categoryId: Int
     private let title: String
     private let imageSide: ImageSide
     private let image: UIImage?
-
+    
     // MARK: - Private Properties
     private lazy var label: UILabel = {
         let element = UILabel()
@@ -28,7 +28,7 @@ class CategoryButton: UIControl {
         element.textAlignment = .center
         return element
     }()
-
+    
     private lazy var imageView: UIImageView = {
         let element = UIImageView()
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +36,7 @@ class CategoryButton: UIControl {
         element.contentMode = .scaleAspectFit
         return element
     }()
-
+    
     // MARK: - Inits
     internal init(title: String, imageSide: CategoryButton.ImageSide, image: UIImage?, categoryId: Int) {
         self.title = title
@@ -46,11 +46,11 @@ class CategoryButton: UIControl {
         super.init(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         setupView()
     }
-
+    
     required init?(coder: NSCoder) {
         nil
     }
-
+    
 }
 
 extension CategoryButton: ViewCodable {
@@ -58,18 +58,18 @@ extension CategoryButton: ViewCodable {
         addSubview(label)
         addSubview(imageView)
     }
-
+    
     func setupConstraints() {
         NSLayoutConstraint.activate([
             self.heightAnchor.constraint(equalToConstant: 100),
-        
+            
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
             label.heightAnchor.constraint(equalToConstant: 45),
-
+            
             imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             imageView.heightAnchor.constraint(equalToConstant: 140),
             imageView.widthAnchor.constraint(equalToConstant: 140)
-
+            
         ])
         
         switch imageSide {
@@ -79,14 +79,14 @@ extension CategoryButton: ViewCodable {
             configureButtonRight()
         }
     }
-
+    
     func setupAdditionalConfiguration() {
         backgroundColor = UIColor(red: 0.961, green: 0.941, blue: 0.882, alpha: 1)
         layer.cornerRadius = 35
         label.text = title
         imageView.image = image
     }
-
+    
     private func configureButtonLeft() {
         NSLayoutConstraint.activate([
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -10),
@@ -95,7 +95,7 @@ extension CategoryButton: ViewCodable {
             label.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
-
+    
     private func configureButtonRight() {
         NSLayoutConstraint.activate([
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 10),

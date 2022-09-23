@@ -15,7 +15,7 @@ public protocol LoginViewDelegate: AnyObject {
 class LoginView: UIView {
     // MARK: - Public Properties
     weak var delegate: LoginViewDelegate?
-
+    
     // MARK: - Private Properties
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
@@ -24,7 +24,7 @@ class LoginView: UIView {
         stackView.spacing = 27
         return stackView
     }()
-
+    
     private lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -33,7 +33,7 @@ class LoginView: UIView {
         imageView.image = UIImage(named: "growmart")
         return imageView
     }()
-
+    
     private lazy var bagsImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +42,7 @@ class LoginView: UIView {
         imageView.image = UIImage(named: "sacolas")
         return imageView
     }()
-
+    
     private lazy var facebookLoginButton: UIButton = {
         let element = UIButton()
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +55,7 @@ class LoginView: UIView {
                                           icon: UIImage(named: "facebook-logo"))
         return element
     }()
-
+    
     private lazy var googleLoginButton: UIButton = {
         let element = UIButton()
         element.translatesAutoresizingMaskIntoConstraints = false
@@ -75,19 +75,19 @@ class LoginView: UIView {
         super.init(frame: frame)
         setupView()
     }
-
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
     }
-
+    
     // MARK: - Actions
-
+    
     @objc
     private func didTapFacebookLogin() {
         delegate?.openFacebookLogin()
     }
-
+    
     @objc
     private func didTapGoogleLogin() {
         delegate?.openGoogleLogin()
@@ -101,7 +101,7 @@ extension LoginView: ViewCodable {
         buildViewHierarchy()
         setupConstraints()
     }
-
+    
     func setupAdditionalConfiguration(){
         
     }
@@ -112,16 +112,16 @@ extension LoginView: ViewCodable {
         stackView.addArrangedSubview(facebookLoginButton)
         stackView.addArrangedSubview(googleLoginButton)
         stackView.setCustomSpacing(16, after: facebookLoginButton)
-
+        
         addSubview(stackView)
     }
-
+    
     func setupConstraints() {
         NSLayoutConstraint.activate([
             stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 60),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -60),
-
+            
             logoImageView.heightAnchor.constraint(equalToConstant: 49),
             bagsImageView.heightAnchor.constraint(equalToConstant: 106),
             facebookLoginButton.heightAnchor.constraint(equalToConstant: 41),

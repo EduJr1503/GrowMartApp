@@ -8,26 +8,26 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     // MARK: - Internal Properties
     private lazy var loginView: LoginView = {
         let element = LoginView()
         element.translatesAutoresizingMaskIntoConstraints = false
         return element
     }()
-
+    
     // MARK: - View Life Cycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
-
+    
     // MARK: - Private Methods
     private func setupView() {
         loginView.delegate = self
         view.addSubview(loginView)
-
+        
         NSLayoutConstraint.activate([
             loginView.topAnchor.constraint(equalTo: view.topAnchor),
             loginView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -42,10 +42,10 @@ extension LoginViewController: LoginViewDelegate {
         print("didTapFacebookLogin")
         navigationController?.setViewControllers([SelectorViewController()], animated: true)
     }
-
+    
     func openGoogleLogin() {
         print("didTapGoogleLogin")
         navigationController?.setViewControllers([SelectorViewController()], animated: true)
-
+        
     }
 }
